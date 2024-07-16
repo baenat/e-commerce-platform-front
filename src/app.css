@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--font-family: "Poppins", sans-serif;
+	--color-bg-0: rgb(202, 216, 228);
+	--color-bg-1: hsl(209, 36%, 86%);
+	--color-bg-2: hsl(224, 44%, 95%);
+	--color-text: rgba(0, 0, 0, 0.7);
+
+	font-family: var(--font-family);
+	color: var(--color-text);
+
+	/* Toast */
+	--toastContainerTop: auto;
+	--toastBackground: #fff;
+	--toastColor: #000;
+	--toastBarBackground: #eab208cb;
+}
+
+*::selection {
+  --tw-bg-opacity: .9;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity)) /* #fcd34d */;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-color: var(--color-bg-1);
+	background-size: 100vw 100vh;
+	background-image: radial-gradient(50% 50% at 50% 50%,
+			rgba(255, 255, 255, 0.75) 0%,
+			rgba(255, 255, 255, 0) 100%),
+		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* Styles Modal Confirm */
+.bg-surface-100-800-token {
+	background-color: white;
+}
+
+.btn.variant-ghost-surface {
+	--tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity)) /* #dc2626 */;
+	font-weight: 500;
+}
+
+.btn.variant-filled {
+	--tw-text-opacity: 1;
+	--tw-bg-opacity: 1;
+	font-weight: 500;
+	border-radius: 0.5rem;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-yellow-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity)) /* #eab308 */;
+}
+
+.btn.variant-filled:hover {
+  --tw-text-opacity: 1;
+	--tw-bg-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
