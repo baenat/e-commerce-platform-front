@@ -62,7 +62,7 @@
 		<div class="grid grid-cols-2 gap-5 md:grid-cols-3">
 			{#each products as product}
 				<ProductItem
-					showActions={true}
+					showActions={false}
 					productId={product.id || ''}
 					title={product.name}
 					image="{product.images[0]}"
@@ -80,10 +80,10 @@
 
 
 <!-- Add Product Button -->
-<button on:click={modalComponentForm} 
+<!-- <button on:click={modalComponentForm} 
 	class="product__add cursor-pointer text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow hover:bg-yellow-500">
 	Add product
-</button>
+</button> -->
 
 <!-- Modal Add Product -->
 <Modal />

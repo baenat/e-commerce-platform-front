@@ -89,7 +89,7 @@
       on:click={() => prepareToCart()}>
       Add to cart
     </button>
-    <button
+    <!-- <button
       class="w-full h-12 text-black font-bold transition-colors duration-150 focus:shadow hover:bg-[#282828] hover:text-white"
       on:click={() => {}}>
       Edit Product
@@ -98,6 +98,6 @@
       class="w-full h-12 text-red-600 font-bold transition-colors duration-150 focus:shadow border-solid border-black hover:bg-[#282828] hover:text-white"
       on:click={() => {}}>
       Delete Product
-    </button>
+    </button> -->
   </div>
 </div>
